@@ -7,4 +7,5 @@ sudo helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard
 # sudo kubectl edit svc kubernetes-dashboard-kong-proxy
 # sudo kubectl get pods
 # sudo kubectl get svc
-# sudo kubectl get node -o wide
+# sudo kubectl get node -o wide 
+# sudo kubectl get pods
