@@ -1,4 +1,4 @@
-aws eks --region us-east-1 update-kubeconfig --name demo
+sudo aws eks --region us-east-1 update-kubeconfig --name demo
 
 sudo helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
 sudo helm repo update
