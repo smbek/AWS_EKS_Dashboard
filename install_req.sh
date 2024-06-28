@@ -44,6 +44,11 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://
 sudo apt update
 sudo apt install terraform -y
 
+
+# Installing Helm
+sudo snap install helm --classic
+
+
 # # Install Trivy
 # sudo apt-get install wget apt-transport-https gnupg lsb-release -y
 # wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
@@ -56,8 +61,6 @@ sudo apt install terraform -y
 # kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.4.7/manifests/install.yaml
 # sudo apt install jq -y
 
-# Installing Helm
-sudo snap install helm --classic
 
 # Adding Helm repositories
 

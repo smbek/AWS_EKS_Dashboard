@@ -16,7 +16,7 @@ function create_cluster() {
 
 function dashboard() {
     cd ../dashboard
-    sudo ./dashboard.sh
+    sudo ./11-dashboard.sh
 }
 
 create_cluster

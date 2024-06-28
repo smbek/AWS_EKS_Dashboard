@@ -1,9 +1,15 @@
+# EKS update config with awscli command
 sudo aws eks --region us-east-1 update-kubeconfig --name demo
 
+# Adding kubernetes dashboard repo
 sudo helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
+
+# Updating repo
 sudo helm repo update
 
+# installing kubernetes-dashboard
 sudo helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard
+
 # sudo kubectl edit svc kubernetes-dashboard-kong-proxy
 # sudo kubectl get pods
 # sudo kubectl get svc
@@ -14,7 +20,7 @@ sudo helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard
 # secrets:
 #   - name: admin-token
 # vi secret.yaml
-# apiVersion: v1
+# apiVersion: v1  
 # kind: Secret
 # metadata:
 #   name: admin-token
